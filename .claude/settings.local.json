@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L \"https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg\" -o \"D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges\\\\appstore.svg\")",
+      "Bash(curl -L \"https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png\" -o \"D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges\\\\googleplay.png\")",
+      "Bash(powershell -Command \"Get-ChildItem ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges''\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges''; Invoke-WebRequest -Uri ''https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg'' -OutFile ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges\\\\appstore.svg''; Invoke-WebRequest -Uri ''https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'' -OutFile ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges\\\\googleplay.png''; Get-ChildItem ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges''\")",
+      "Bash(powershell -Command \"try { Invoke-WebRequest -Uri ''https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg'' -OutFile ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges\\\\appstore.svg'' -UseBasicParsing; Write-Host ''App Store badge downloaded'' } catch { Write-Host ''Error: '' $_Exception.Message }\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\badges'' | Out-Null; Write-Host ''done''\")",
+      "Bash(cd /d D:LaTRUEPREPDMVdmv-pass-launch-main)",
+      "Bash(findstr /i \"helmet\" package.json)",
+      "Bash(npm install:*)",
+      "Bash(dir \"D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\node_modules\\\\react-helmet-async\")",
+      "Bash(powershell -Command \"Get-ChildItem ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public'' -Filter ''*.png'' | Select-Object Name, @{N=''KB'';E={[math]::Round\\($_Length/1KB,1\\)}} | Sort-Object KB -Descending\")",
+      "Bash(powershell -Command \"Get-ChildItem ''D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\src\\\\assets'' -Filter ''*.png'' | Select-Object Name, @{N=''KB'';E={[math]::Round\\($_Length/1KB,1\\)}}\")",
+      "Bash(dir \"D:\\\\La\\\\TRUEPREP\\\\DMV\\\\dmv-pass-launch-main\\\\public\\\\*.png\" /s)"
+    ]
+  }
+}
