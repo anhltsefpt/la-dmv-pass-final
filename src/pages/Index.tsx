@@ -67,7 +67,7 @@ const Index = () => {
               Smart test simulations, adaptive learning, and a pass probability engine that tells you exactly when you're ready. Study smarter, not harder.
             </p>
             <div className="flex flex-wrap items-center gap-3 mb-8">
-              <a href="#" aria-label="Download on the App Store">
+              <a href="https://apps.apple.com/us/app/dmv-pass-2026/id1458421142" aria-label="Download on the App Store">
                 <img src="/badges/appstore.svg" alt="Download on the App Store" style={{ height: "54px", width: "auto" }} />
               </a>
               <a href="#" aria-label="Get it on Google Play">
@@ -174,7 +174,7 @@ const Index = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4">Start studying for free today</h2>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">Join 500,000+ learners who passed their DMV test with confidence. No credit card required.</p>
           <div className="flex flex-wrap justify-center items-center gap-4">
-            <a href="#" aria-label="Download on the App Store">
+            <a href="https://apps.apple.com/us/app/dmv-pass-2026/id1458421142" aria-label="Download on the App Store">
               <img src="/badges/appstore.svg" alt="Download on the App Store" style={{ height: "54px", width: "auto" }} />
             </a>
             <a href="#" aria-label="Get it on Google Play">
