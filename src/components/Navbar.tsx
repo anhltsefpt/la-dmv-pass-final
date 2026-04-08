@@ -97,9 +97,11 @@ const Navbar = () => {
 
         {/* Right side */}
         <div className="flex items-center gap-3">
-          <Button size="sm" className="rounded-full px-5 hidden md:inline-flex">
-            Get the App
-          </Button>
+          <a href="https://apps.apple.com/us/app/dmv-pass-2026/id1458421142">
+            <Button size="sm" className="rounded-full px-5 hidden md:inline-flex">
+              Get the App
+            </Button>
+          </a>
           <button
             className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -131,7 +133,9 @@ const Navbar = () => {
           </div>
           <Link to="/privacy" className="py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileOpen(false)}>Privacy Policy</Link>
           <Link to="/terms" className="py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileOpen(false)}>Terms of Service</Link>
-          <Button size="sm" className="rounded-full mt-3">Get the App</Button>
+          <a href="https://apps.apple.com/us/app/dmv-pass-2026/id1458421142">
+            <Button size="sm" className="rounded-full mt-3">Get the App</Button>
+          </a>
         </div>
       )}
     </nav>
